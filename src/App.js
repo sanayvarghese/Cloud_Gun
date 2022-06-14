@@ -112,7 +112,12 @@ function ImageGrid({ setSelectedImg }) {
               s
               onClick={() => setSelectedImg(doc.url)}
             >
-              <a href={doc.url} className="alt-grey" target="_blank">
+              <a
+                href={doc.url}
+                className="alt-grey"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <motion.img
                   src={doc.url}
                   onError={(e) => {
