@@ -2,7 +2,7 @@
 
 Cloud storage where you can securely upload and store your photos, videos, and files
 
-[Demo](https://cloud.sanayvarghese.tk) 🌏
+[Demo](https://cloudgun.sanayvarghese.tk) 🌏
 
 ## Screen Shot
 
