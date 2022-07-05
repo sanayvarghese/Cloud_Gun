@@ -14,7 +14,7 @@ body {
 button {
   background: none;
   border: none;
-  position: absolute;
+  /* position: absolute; */
 }
 .deletebtn {
   background-color: #ff0101;
@@ -23,6 +23,9 @@ button {
   width: 100px;
   height: 30px;
 }
+/* .img-btns {
+  display: flex;
+} */
 .btndiv {
   justify-content: center;
   align-items: center;
@@ -73,11 +76,9 @@ form {
   display: block;
   width: 30px;
   height: 30px;
-  border: 1px solid var(--primary);
   border-radius: 50%;
   margin: 10px auto;
-  line-height: 30px;
-  color: var(--primary);
+  line-height: 25px;
   font-weight: bold;
   font-size: 24px;
 }
@@ -252,4 +253,56 @@ footer {
   color: inherit;
   font-size: 1rem;
   font-weight: bold;
+}
+
+#form-file-upload {
+  height: 3rem;
+  width: 80%;
+  max-width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+#input-file-upload {
+  display: none;
+}
+
+#label-file-upload {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-width: 2px;
+  border-radius: 1rem;
+  border-style: dashed;
+  border-color: #cbd5e1;
+  background-color: transparent;
+}
+
+#label-file-upload.drag-active {
+  background-color: #9c9c9c21;
+}
+
+.upload-button {
+  cursor: pointer;
+  padding: 0.25rem;
+  font-size: 1rem;
+  border: none;
+  font-family: "Oswald", sans-serif;
+  background-color: transparent;
+}
+
+.upload-button:hover {
+  text-decoration-line: underline;
+}
+
+#drag-file-element {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
 }
